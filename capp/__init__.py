@@ -8,14 +8,14 @@ application = Flask(__name__)
 
 ### Code GitHub
 application.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-# DBVAR=os.environ['DATABASE_URL']
+DBVAR=os.environ['DATABASE_URL']
 # DBVAR="postgresql://username:os.environ.get(‘DB_PASSWORD’)@host:port/database"
 # DBVAR="postgresql://username:password@host:port/database"
 # application.config['SQLALCHEMY_DATABASE_URI'] = DBVAR 
 # application.config['SQLALCHEMY_BINDS'] ={'transport': DBVAR}
 
 ### Code computer
-DBVAR="postgresql://qpkkgqggrfdfyb:a6d286a6f688ab48e035bcdc614566ef5f9d76f4ed6c44073597a19c0be2e6d8@ec2-52-50-161-219.eu-west-1.compute.amazonaws.com:5432/d93oucbfvllhpg"
+# DBVAR="postgresql://qpkkgqggrfdfyb:a6d286a6f688ab48e035bcdc614566ef5f9d76f4ed6c44073597a19c0be2e6d8@ec2-52-50-161-219.eu-west-1.compute.amazonaws.com:5432/d93oucbfvllhpg"
 application.config['SQLALCHEMY_DATABASE_URI'] = DBVAR 
 application.config['SQLALCHEMY_BINDS'] ={'transport': DBVAR}
 
